@@ -1,0 +1,96 @@
+/* CONFIGURAÇÕES PRINCIPAIS DO HEADER */
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header a,
+header p {
+    font-size: 24px;
+    color: white !important;
+}
+
+
+.container-header {
+    background-color: #101107;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+
+
+/* LOGO */
+.logo-header img {
+    width: 150px;
+}
+
+.logo-headerCommon {
+    margin-left: 60px;
+
+}
+
+#logo-topheader{
+    padding-top: 7px !important;
+}
+
+/* // */
+
+
+/* LISTA ORDENADA */
+.headerList-item li {
+    margin-top: 40px;
+}
+
+.headerList-item-item1 li {
+    margin-top: 30px;
+}
+
+.ul-headerList li {
+    transition: 0.3s;
+}
+
+.ul-headerList li {
+    display: inline-block;
+    position: relative;
+}
+/* // */
+
+/* HOVER - LISTA ORDENADA */
+.ul-headerList li:hover {
+    color: #04e26e;
+}
+/* // */
+
+/* UNDERLINE HOVER */
+.ul-headerList li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #04e26e;
+    transform-origin: bottom right;
+    transition: transform 0.28s ease-out;
+}
+
+.ul-headerList li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* // */
+
+
+
+.ul-headerList a{
+    
+    text-align: center;
+}
+
+
+.logo-headerCommon .ul-headerList{
+    margin-top: 20px;
+}

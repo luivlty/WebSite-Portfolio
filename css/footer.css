@@ -1,0 +1,18 @@
+.footer-container{
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
+.redes-footer img{
+    max-width: 70px !important;
+}
+
+.redes-footer div{
+    color: white;
+    transition: 0.5s;
+}
+
+.redes-footer div:hover{
+    color: black;
+}
+

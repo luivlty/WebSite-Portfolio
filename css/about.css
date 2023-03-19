@@ -1,0 +1,209 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap');
+
+
+.about-content h4{
+    color: #02C556;
+}
+
+
+
+
+.rev-block{
+    position: absolute;
+}
+
+.rev-block h2{
+    font-family: 'Righteous', cursive !important;
+    opacity: 0;
+    animation: appear-text 0.0001s linear forwards;
+    animation-delay: 1.4s;
+}
+
+.rev-block:after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    widows: 0%;
+    height: 60%;
+    background: #00f0b5;
+    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+}
+
+@keyframes rev-block {
+    
+    0%{
+        left: 0;
+        width: 0%;
+    }
+    50%{
+        left: 0;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
+
+@keyframes appear-text {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#onemore{
+    top: 35%;
+    margin-left: 40px;
+
+}
+
+
+#onemore.rev-block:after {
+    background: #5e239d;
+    animation-delay: 1.4s
+}
+
+@media only screen and (max-width: 900px) {
+    h1{
+        font-size: 20px;
+        padding: 0.4em;
+    }
+}
+
+.typing-effect {
+    width: 230px;
+    color: #02C556;
+    height: 25px;
+    animation: typing 1.7s steps(22), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+
+    margin-top: 110px;
+    margin-left: 43px;
+}
+  
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes effect {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+
+
+  .aboutus{
+    background-image: url(../img/background/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    padding-top: 200px;
+    padding-left: 400px !important; 
+
+  }
+
+  .typing-effect-text {
+    width: 100%;
+    height: 30px;
+    animation: typing 1.7s steps(22), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+
+
+}
+
+.img-aboutme{
+    max-width: 600px;
+    max-height: 650px;
+}
+
+
+.img-aboutme img{
+    max-width: 100% !important;
+    max-height: 100% !important;
+    border-radius: 10px;
+}
+
+.text-aboutme p{
+    line-height: 1.6 !important ;
+    font-size: clamp(1em, 1em + 1vw, 1.5em) !important;
+    margin-top: 20px;
+}
+
+.text-aboutme h2{
+    font-size: 32px !important;
+}
+
+.text-aboutme{
+    padding: 30px !important;
+}
+
+.aboutme-container{
+    padding: 20px !important;
+} 
+
+
+  h1 {
+    margin: 0;
+    letter-spacing: -2px;
+  }
+  
+  .text-aboutme p, .text-aboutme h2 {
+    position: relative;
+    top: .8rem;
+    opacity: 0;
+    animation: .5s swift-up ease-out forwards, .5s fade-in ease-out forwards;
+    animation-delay: .5s;
+  }
+  
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  span {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: .8rem;
+    animation: .3s swift-up ease-in-out forwards;
+  }
+  
+  i {
+    font-style: normal;
+    position: relative;
+    top: 2rem;
+    animation: .5s swift-up ease-in-out forwards;
+  }
+  
+  @keyframes swift-up {
+    to {
+      top: 0rem;
+    }
+  }
+  
+  .text-aboutme h2:nth-of-type(1) i {
+    animation-delay: 0s;
+  }

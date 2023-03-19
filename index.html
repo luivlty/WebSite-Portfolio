@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Luis Felipe - Portifólio</title>
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container-header">
+            <div class="div-containerHeader">
+            </div>
+
+
+            <!-- BOTÃO SANDUICHE -->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" onclick="checkSandu()">
+            <label for="openSidebarMenu" class="sidebarIconToggle mx-3 mt-2">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <!-- // -->
+
+            <!-- LISTA ORDENADA -->
+            <div class="logo-headerCommon d-flex align-items-center justify-content-between">
+
+                <div class="mx-5 mainUlHeader">
+                    <a href="index.html"><img src="img/logo/Lui.png" width="95px" id="logo-topheader"></a>
+                </div>
+                <div>
+                    <ul class="d-flex gap-5 mt-3 mx-5 ul-headerList">
+                        <a href="#about">
+                            <li>Sobre</li>
+                        </a>
+                        <a href="#projects">
+                            <li>Projetos</li>
+                        </a>
+                        <a href="#contact">
+                            <li>Contato</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!-- //  -->
+
+            <div id="sidebarMenu">
+                <!-- LOGO - HEADER -->
+                <div class="logo-header">
+                    <a href="index.html"><img src="img/logo/Lui.png" alt="Logo LUI WEB DEVELOPMENT"></a>
+
+                </div>
+                <!-- // -->
+
+                <!-- BOTÃO SANDUICHE - LISTA ORDENADA -->
+                <ul class="ul-headerList d-flex flex-column">
+                    <a href="#about" class="headerList-item-item1"><img src="img/icones-header/person.png" width="30px"
+                            class="mx-3">
+                        <li>Sobre</li>
+                    </a>
+
+
+                    <a href="#projects" class="headerList-item"><img src="img/icones-header/project.png" width="30px"
+                            class="mx-3">
+                        <li>Projetos</li>
+                    </a>
+                    <a href="#contact" class="headerList-item"><img src="img/icones-header/contact.png" width="30px"
+                            class="mx-3">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+                <!-- // -->
+            </div>
+            <!-- // -->
+        </div>
+        </div>
+    </header>
+    <!-- // -->
+
+    <!-- CONTEUDO -->
+    <main>
+        <div>
+            <div id="parallax">
+                <div class="parallax-one" id="home">
+                    <section>
+                        <div class="block d-flex flex-column align-items-center text-center justify-content-center">
+                            <div class="rev-block mb-5 pb-5 ms-5">
+                                <h2>Luis Felipe</h2>
+                            </div>
+                            <div class="typing-effect tipyng">
+                                <h4>Desenvolvedor web</h4>
+                            </div>
+                            <div style="max-width:360px" class="text-about typing-effect-text tipyng mt-3">
+
+                                <p class="fs-4">
+                                    Técnologias: HTML, CSS, JavaScript,
+                                </p>
+                            </div>
+                            <div style="max-width:190px" class="text-about typing-effect-text tipyng mt-3">
+                                <p class="fs-4">
+                                    Vue JS e Bootstrap;
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+
+                <section>
+                    <div class="parallax-two" id="about">
+                        <div class="block aboutme-container d-flex align-items-center justify-content-around">
+                            <div class="img-aboutme">
+                                <img src="img/imagens/searching.jpg" alt="Imagem - Sobre">
+                            </div>
+
+                            <div class="text-aboutme d-flex flex-column align-items-center">
+                                <h2>Desenvolvedor Front End</h2>
+                                <p class="text-center">Desenvolvimento front end, focado no design, interatividade,
+                                    conforto visual, responsividade e acessibilidade para todos, com o uso das
+                                    técnologias: HTML, CSS, Bootstrap, Vue.JS, e utilizando as linguagens JavaScript e
+                                    PHP.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+
+        <!-- PROJETOS -->
+        <div id="parallax">
+            <section>
+                <div class="parallax-three" id="projects">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <h2 class="text-white">Projetos</h2>
+                        </div>
+
+                        <div class="projects-demo d-flex align-items-center justify-content-center gap-5">
+                            <div class="text-center projects-img">
+                                <h2 class="mb-4 text-white fs-5">Template - Loggi</h2>
+                                <a href="https://luidev1.github.io/loggi_template/"><img
+                                        src="img/projetos/projeto-1.png" alt="Loggi - Template"
+                                        class="border rounded"></a>
+                            </div>
+                            <div class="text-center projects-img">
+                                <h2 class="mb-4 text-white fs-5">PetShop - DogSmile</h2>
+                                <a href="https://luidev1.github.io/petshop/"><img src="img/projetos/projeto-2.png"
+                                        alt="PetShop DOGSMILE" class="border rounded"></a>
+                            </div>
+                            <div class="text-center projects-img">
+                                <h2 class="mb-4 text-white fs-5">Urban Store</h2>
+                                <a href="https://luidev1.github.io/urban-store/"><img src="img/projetos/projeto-3.png"
+                                        alt="Urban Store" class="border rounded"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- // -->
+
+        <!-- CONTATO -->
+
+        <div id="parallax">
+            <section>
+                <div class="parallax-four" id="contact">
+                    <div class="block d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <h2>Contato</h2>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="fs-5"><b>luisfscontato@gmail.com</b></p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-5 gap-3">
+                            <a href="https://www.linkedin.com/in/luis-felipe-060ab5235/" target="_blank"><img src="img/redes/linkedin.png" alt="" width="70px"></a>
+                            <a href="https://github.com/luidev1" target="_blank"><img src="img/redes/github.png" alt="" width="70px"></a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- // -->
+    </main>
+    <!-- // -->
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-container d-flex justify-content-around flex-wrap">
+            <!-- REDES SOCIAIS -->
+            <div>
+                <ul class="redes-footer d-flex justify-content-center gap-5">
+                    <div class="d-flex flex-column align-items-center">
+                        <li><a href="https://www.linkedin.com/in/luis-felipe-060ab5235/" target="_blank"><img src="img/redes/linkedin.png" alt=""></a></li>
+                        <p class="mt-2 subname">Linkedin</p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center">
+                        <li><a href="https://github.com/luidev1" target="_blank"><img src="img/redes/github.png" alt=""></a></li>
+                        <p class="mt-2 subname">Github</p>
+                    </div>
+                </ul>
+                <div class="d-flex justify-content-center direitos">
+                    <h6>Todos os direitos reservados - Luis Felipe</h6>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <!-- // -->
+
+</body>
+
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script><!-- //BOOTSTRAP -->
+<!-- // -->
+
+<script src="script.js"></script>
+
+</html>

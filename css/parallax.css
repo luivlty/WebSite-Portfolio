@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+
+#main {
+    width: 100%;
+    padding: 0;
+}
+
+.content-asset p {
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+.margin-bot-10 {
+    padding-bottom: 10px;
+}
+
+
+#parallax h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#parallax h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+#parallax h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#parallax p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+#parallax .title {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#parallax .title h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+
+#parallax .block {
+    background: white;
+    padding: 60px;
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#parallax .parallax-two .block {
+    background: white;
+    padding: 60px;
+    width: 1250px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+#parallax .block-gray {
+    background: #f2f2f2;
+    padding: 60px;
+}
+
+#parallax .section-overlay-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.70;
+}
+
+
+#parallax .parallax-one {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    overflow: hidden;
+    width: 100%;
+    background-image: url(../img/background/bg-1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#parallax .parallax-two {
+    padding-top: 350px;
+    padding-bottom: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/background/bg-2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#parallax .parallax-three {
+    padding-top: 350px;
+    padding-bottom: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/background/bg-3.png);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#parallax .parallax-four {
+    padding-top: 350px;
+    padding-bottom: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/background/bg-4.png);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    #parallax .block {
+        padding: 40px;
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #parallax .block, .parallax-two .block{
+        padding: 30px !important;
+        width: 450px !important;
+    }
+
+    #parallax h2 {
+        font-size: 30px !important;
+    }
+
+    #parallax .block{
+        padding: 30px !important;
+    }
+
+    .aboutme-container{
+        flex-direction: column;
+        max-width: 420px !important;
+    }
+
+    .img-aboutme{
+        max-width: 100% !important;
+    }
+
+    #parallax .parallax-one,
+    #parallax .parallax-two,
+    #parallax .parallax-three,
+    #parallax .parallax-four {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #parallax .parallax-one {
+        padding-top: 300px;
+        padding-bottom: 350px;
+        overflow: hidden;
+        width: 100%;
+        background-image: url(../img/background/bg-1.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .rev-block{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #parallax .block {
+        padding: 30px 15px;
+        width: 290px;
+    }
+}
+
+.text-parallax {
+    font-size: 22px !important;
+}
